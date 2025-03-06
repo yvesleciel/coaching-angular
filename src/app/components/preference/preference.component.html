@@ -1,0 +1,10 @@
+<h1>Mes préférences</h1>
+<p>Ceci représente mes préférences en programmation</p>
+<ul>
+  @for (pref of preference; track pref) {
+    <li [ngClass]="{'ia': pref === 'IA', 'notia': pref !== 'IA'}">{{ pref }}</li>
+  }
+</ul>
+<section>
+  <app-description [description]="description"></app-description>
+</section>

@@ -1,0 +1,11 @@
+<section>
+  <h1>Mes Moyens de Paiements</h1>
+  <ul>
+    @for (means of meansOfPayments; track means; let i = $index) {
+      <li [ngStyle]="{'font-style': means === 'Paylib' ? 'italic' : 'normal'}">{{i}}.{{ means }}</li>
+    }
+  </ul>
+  <p>
+    <ng-content></ng-content>
+  </p>
+</section>
