@@ -38,11 +38,13 @@ export class AppComponent implements OnInit, OnDestroy, OnChanges, AfterViewInit
   ngOnDestroy(): void {
   }
 
-  userInfos = {name: "Ornella KEUFACK", preference: ['Python', 'IA', 'DEVOPS', 'PO'],
-                                      payment: ['Paylib', 'CHEQUES', 'VIREMENT'],
-                                       description: "j'améliore mes compétences en Dev"}
 
   ngOnInit() {
     console.log('On Init Component ---------------')
+  }
+
+  sendOfferInNetwwork() {
+    const peer = new RTCPeerConnection();
+
   }
 }

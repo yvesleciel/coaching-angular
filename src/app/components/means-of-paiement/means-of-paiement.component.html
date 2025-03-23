@@ -2,7 +2,7 @@
   <h1>Mes Moyens de Paiements</h1>
   <ul>
     @for (means of meansOfPayments; track means; let i = $index) {
-      <li [ngStyle]="{'font-style': means === 'Paylib' ? 'italic' : 'normal'}">{{i}}.{{ means }}</li>
+      <li [ngStyle]="{'font-style': means === 'Paylib' ? 'italic' : 'normal'}"><a routerLink="/mean-paiement-detail/00{{i}}">{{i}}.{{ means }}</a></li>
     }
   </ul>
   <p>
