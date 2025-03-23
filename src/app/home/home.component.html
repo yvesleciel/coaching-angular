@@ -1,0 +1,15 @@
+<section style="display: flex; flex-direction: row; justify-content: space-between; margin: 2px">
+  <section style="height: auto; border: 1px solid blue">
+    <app-bio [name]="userInfos.name"></app-bio>
+  </section>
+
+  <section style="height: auto; border: 1px solid red">
+    <app-means-of-paiement [meansOfPayments]="userInfos.payment">
+      {{ user | name:true}}
+    </app-means-of-paiement>
+  </section>
+
+  <section style="height: auto; border: 1px solid black">
+    <app-preference [preference]="userInfos.preference" [description]="userInfos.description"></app-preference>
+  </section>
+</section>
